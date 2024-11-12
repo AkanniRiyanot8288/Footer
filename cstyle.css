@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #eeeceb;
+}
+
+footer {
+  position: relative;
+  background: #140B5C;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-top: 30px;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #afafb6;
+}
+
+footer .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 40px;
+}
+
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .content .logo-details {
+  color: #fff;
+  font-size: 30px;
+}
+
+footer .content .media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer .content .media-icons a {
+  height: 40px;
+  width: 40px;
+  background: red;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+/* Social media icon colors */
+footer .content .media-icons a:nth-child(1) { background: #4267B2; } /* Facebook */
+footer .content .media-icons a:nth-child(2) { background: #1DA1F2; } /* Twitter */
+footer .content .media-icons a:nth-child(3) { background: #e1306c; } /* Instagram */
+footer .content .media-icons a:nth-child(4) { background: #0077b5; } /* LinkedIn */
+footer .content .media-icons a:nth-child(5) { background: #ff0000; } /* YouTube */
+
+footer .content .link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+footer .content .link-boxes .box {
+  flex: 1 1 150px;
+  min-width: 120px;
+  color: #fff;
+}
+
+footer .content .link-boxes .box .link_name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+footer .content .link-boxes .box li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+footer .content .link-boxes .box li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.4s;
+}
+
+footer .content .link-boxes .box li a:hover {
+  opacity: 1;
+}
+
+footer .content .link-boxes .input-box input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #140B5C;
+  border: 2px solid #afafb6;
+  border-radius: 4px;
+  color: #fff;
+}
+
+footer .content .link-boxes .input-box input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: #fff;
+  color: #140b5c;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+footer .content .link-boxes .input-box input[type="button"]:hover {
+  opacity: 0.8;
+}
+
+.footer .button-details {
+  background: #0f0844;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.button-details .button_text span,
+.button-details .button_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button-details .button_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  footer .content .link-boxes .box {
+    flex: 1 1 200px;
+  }
+
+  footer .content .top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .content .media-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  footer .content .link-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .content .link-boxes .input-box {
+    width: 100%;
+  }
+
+  footer .content .top .logo-details {
+    font-size: 26px;
+  }
+
+  footer .content .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .content {
+    padding: 20px;
+  }
+
+  footer .content .link-boxes .box {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .button-details {
+    text-align: center;
+  }
+
+  .button-details .button_text span,
+  .button-details .button_text a {
+    font-size: 12px;
+  }
+}
